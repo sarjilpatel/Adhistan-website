@@ -1,10 +1,12 @@
 import "./App.css";
-import Navbar from "./app/components/Navbar";
+import Hero from "./app/components/Hero";
+import Timer from "./app/components/Timer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Hero />
+      <Timer />
     </div>
   );
 }
