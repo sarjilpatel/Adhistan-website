@@ -10,7 +10,7 @@
 .hero-content{
     position: absolute;
     bottom: 10vh;
-    left: 100px;
+    left: clamp(60px, 5vw, 100px);
 }
 
 .hero-header{
@@ -26,6 +26,7 @@
 
 .hero-subtitle{
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
+    font-family: 'Kanit';
 }
