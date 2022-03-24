@@ -1,0 +1,40 @@
+.footer-container {
+  color: white;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-div {
+  display: flex;
+  margin-top: 2rem;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.footer-icons {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+.footer-icons > a {
+  text-decoration: none;
+  color: white;
+}
+.footer_icon {
+  margin-inline: 1rem;
+}
+
+.footer-contact-div {
+  margin: 0 1rem 2rem 2rem;
+}
+
+.footer-address-div {
+  margin: 0 1rem 2rem 2rem;
+}
+@media (max-width: 800px) {
+  .footer-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

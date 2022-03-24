@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SidebarContainer, SidebarLink, SidebarMenu } from "./Sidebar";
 
 function Sidebar({ isOpen, toggle }) {

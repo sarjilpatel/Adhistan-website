@@ -2,12 +2,17 @@ import "./navbar.css";
 import { Button } from "@mui/material";
 import Lottie from "lottie-react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 export const NavbarContainer = ({ children }) => (
   <div className="navbar">{children}</div>
 );
 
-export const Logo = () => <div className="logo" />;
+export const Logo = () => (
+  <a href="/">
+    <img src={logo} />
+  </a>
+);
 
 export const Menu = ({ children }) => <div className="menu">{children}</div>;
 
