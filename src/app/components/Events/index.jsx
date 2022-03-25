@@ -1,6 +1,7 @@
 import React from "react";
 import { EventsContainer, EventSection } from "./events";
 import "./events.css";
+import { Fade } from "react-reveal";
 
 const data = [
   {
@@ -104,16 +105,18 @@ const data = [
 
 function Events() {
   return (
-    <EventsContainer>
-      {data.map((item) => (
-        <EventSection
-          title={item.title}
-          image={item.image}
-          id={item.id}
-          events={item.events}
-        />
-      ))}
-    </EventsContainer>
+    <Fade bottom>
+      <EventsContainer>
+        {data.map((item) => (
+          <EventSection
+            title={item.title}
+            image={item.image}
+            id={item.id}
+            events={item.events}
+          />
+        ))}
+      </EventsContainer>
+    </Fade>
   );
 }
 

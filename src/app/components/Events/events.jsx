@@ -14,11 +14,23 @@ export const EventSection = ({ title, events, image }) => (
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <div className="events-wrapper">
-        {events.map((item) => (
-          <span>
-            {item.title} <br />
-          </span>
-        ))}
+        <div className="events-items">
+          <table>
+            {events.map((item) => (
+              <tr>
+                <th>{item.title}</th>
+                <th>
+                  <img src={require("../assets/detail.png")} alt="detail" />
+                </th>
+                <th>
+                  <a href={item?.registerLink}>
+                    <img src={require("../assets/register.png")} alt="detail" />
+                  </a>
+                </th>
+              </tr>
+            ))}
+          </table>
+        </div>
       </div>
     </div>
   </div>
