@@ -1,7 +1,7 @@
 .footer-container {
   color: white;
   background-color: #404040;
-    
+  height: fit-content; 
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +35,7 @@ a:hover{
 
 .footer-contact-div {
   margin: 0 1rem 2rem 2rem;
-  line-height: .5;
+
 }
 
 .footer-container h2{
@@ -44,7 +44,7 @@ a:hover{
 
 .footer-address-div {
   margin: 0 1rem 2rem 2rem;
-  line-height: .5;
+
 }
 @media (max-width: 800px) {
   .footer-div {
