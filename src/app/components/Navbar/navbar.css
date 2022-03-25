@@ -58,6 +58,7 @@ img {
   font-size: 1.4rem;
   color: #fff;
 }
+
 @media screen and (max-width: 600) {
   .menu {
     margin-top: 30px;
