@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/adhistan-website/static/css/main.4f06c791.css",
-    "main.js": "/adhistan-website/static/js/main.b5594318.js",
+    "main.css": "/adhistan-website/static/css/main.ff12cacc.css",
+    "main.js": "/adhistan-website/static/js/main.b3b255a4.js",
     "static/js/787.eaf2651b.chunk.js": "/adhistan-website/static/js/787.eaf2651b.chunk.js",
     "static/media/background.png": "/adhistan-website/static/media/background.73c18587c758ffd3e3f9.png",
-    "static/media/about-background.jpg": "/adhistan-website/static/media/about-background.033226b750f452a325ba.jpg",
     "static/media/hero-title.png": "/adhistan-website/static/media/hero-title.6db8118646da3520e631.png",
+    "static/media/bg.svg": "/adhistan-website/static/media/bg.b0c06136a9244b719e22.svg",
     "index.html": "/adhistan-website/index.html",
-    "main.4f06c791.css.map": "/adhistan-website/static/css/main.4f06c791.css.map",
-    "main.b5594318.js.map": "/adhistan-website/static/js/main.b5594318.js.map",
+    "main.ff12cacc.css.map": "/adhistan-website/static/css/main.ff12cacc.css.map",
+    "main.b3b255a4.js.map": "/adhistan-website/static/js/main.b3b255a4.js.map",
     "787.eaf2651b.chunk.js.map": "/adhistan-website/static/js/787.eaf2651b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f06c791.css",
-    "static/js/main.b5594318.js"
+    "static/css/main.ff12cacc.css",
+    "static/js/main.b3b255a4.js"
   ]
 }
