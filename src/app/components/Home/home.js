@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "../Hero";
-import Timer from "../Timer";
+import Timer from "../Timer/Timer";
 
 function home() {
   return (
     <div>
       <Hero />
-      {/* <Timer /> */}
+      <Timer />
     </div>
   );
 }

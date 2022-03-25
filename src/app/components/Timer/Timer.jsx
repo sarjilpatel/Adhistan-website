@@ -1,54 +1,77 @@
 import { useEffect, useState } from "react";
+import FlipCountdown from "@rumess/react-flip-countdown";
 import "./timer.css";
 
-function toDoubleString(str) {
-  if (Number.parseInt(str) < 10) {
-    str = "0".concat(String(str));
-  }
-  return str;
-}
-
-function calcRemainingTime(endTime) {
-  let currTime = new Date();
-  let endDate = new Date(`${endTime} GMT+0530 (India Standard Time)`);
-  let timeDelta = endDate.getTime() / 1000 - currTime.getTime() / 1000;
-  timeDelta = Math.floor(timeDelta);
-  let mm = Math.floor(timeDelta / 60);
-  let ss = timeDelta - mm * 60;
-  let hh = Math.floor(mm / 60);
-  mm = mm - hh * 60;
-  return {
-    hh: toDoubleString(hh),
-    mm: toDoubleString(mm),
-    ss: toDoubleString(ss),
-  };
-}
-
-export const TimerContainer = ({ children }) => (
-  <div className="timer">{children}</div>
-);
-
-export const Clock = ({ endTime }) => {
-  let [time, setTime] = useState(calcRemainingTime("Tu Mar 29 2022 10:00:00"));
-
-  useEffect(() => {
-    setTime(calcRemainingTime("Tu Mar 29 2022 10:00:00"));
-  });
-
+function Counter() {
   return (
-    <div className="clock">
-      <Hour>{time.hh}</Hour> : <Minute>{time.mm}</Minute> :{" "}
-      <Second>{time.ss}</Second>
+    <div className="timer">
+      <h1>Time Remaining</h1>
+      <div className="counter">
+        <FlipCountdown
+          titlePosition="bottom"
+          theme="dark"
+          hideYear
+          hideMonth
+          hideHour
+          hideMinute
+          hideHour
+          hideSecond
+          dayTitle="Days"
+          hourTitle="Hours"
+          minuteTitle="Minutes"
+          secondTitle="Seconds"
+          endAt={"2022-03-26 01:26:58"}
+        />
+        <FlipCountdown
+          titlePosition="bottom"
+          theme="dark"
+          hideYear
+          hideMonth
+          hideDay
+          hideMinute
+          hideSecond
+          dayTitle="Days"
+          hourTitle="Hours"
+          minuteTitle="Minutes"
+          secondTitle="Seconds"
+          endAt={"2022-03-26 01:26:58"}
+        />
+        <h1>:</h1>
+        <FlipCountdown
+          titlePosition="bottom"
+          theme="dark"
+          hideYear
+          hideMonth
+          hideHour
+          hideDay
+          hideHour
+          hideSecond
+          dayTitle="Days"
+          hourTitle="Hours"
+          minuteTitle="Minutes"
+          secondTitle="Seconds"
+          endAt={"2022-03-26 01:26:58"}
+        />
+        <h1>:</h1>
+        <FlipCountdown
+          titlePosition="bottom"
+          theme="dark"
+          hideYear
+          hideMonthhideYear
+          hideMonth
+          hideHour
+          hideMinute
+          hideHour
+          hideDay
+          dayTitle="Days"
+          hourTitle="Hours"
+          minuteTitle="Minutes"
+          secondTitle="Seconds"
+          endAt={"2022-03-26 01:26:58"}
+        />
+      </div>
     </div>
   );
-};
+}
 
-export const Hour = ({ children }) => <span className="hour">{children}</span>;
-
-export const Minute = ({ children }) => (
-  <span className="minute">{children}</span>
-);
-
-export const Second = ({ children }) => (
-  <span className="second">{children}</span>
-);
+export default Counter;

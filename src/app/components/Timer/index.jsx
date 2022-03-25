@@ -1,12 +1,8 @@
 import React from "react";
-import { TimerContainer, Clock } from "./Timer";
+import Counter from "./Timer";
 
 function Timer() {
-  return (
-    <TimerContainer>
-      <Clock />
-    </TimerContainer>
-  );
+  return <Counter />;
 }
 
 export default Timer;
