@@ -12,7 +12,7 @@ function About() {
       <div className="about-div">
         <div className="about-part">
           <Bounce bottom>
-            <h3>About MBIT Collage</h3>
+            <h3>About MBIT</h3>
           </Bounce>
           <Fade bottom>
             <p>
