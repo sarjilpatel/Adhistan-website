@@ -12,21 +12,6 @@ function Counter() {
           theme="dark"
           hideYear
           hideMonth
-          hideHour
-          hideMinute
-          hideHour
-          hideSecond
-          dayTitle="Days"
-          hourTitle="Hours"
-          minuteTitle="Minutes"
-          secondTitle="Seconds"
-          endAt={"2022-03-26 01:26:58"}
-        />
-        <FlipCountdown
-          titlePosition="bottom"
-          theme="dark"
-          hideYear
-          hideMonth
           hideDay
           hideMinute
           hideSecond
@@ -44,7 +29,6 @@ function Counter() {
           hideMonth
           hideHour
           hideDay
-          hideHour
           hideSecond
           dayTitle="Days"
           hourTitle="Hours"
@@ -59,7 +43,6 @@ function Counter() {
           hideYear
           hideMonthhideYear
           hideMonth
-          hideHour
           hideMinute
           hideHour
           hideDay

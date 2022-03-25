@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import Lottie from "lottie-react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { NavLink as Link } from "react-router-dom";
 
 export const NavbarContainer = ({ children }) => (
   <div className="navbar">{children}</div>
@@ -35,7 +36,7 @@ export const MenuItemWrapper = ({ children, ...extra }) => (
 );
 
 export const NavLink = ({ children, ...extra }) => (
-  <div {...extra} className="menu-item">
+  <Link {...extra} className="menu-item">
     {children}
-  </div>
+  </Link>
 );
