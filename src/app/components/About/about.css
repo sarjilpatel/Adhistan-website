@@ -1,4 +1,4 @@
-.container {
+.about {
   text-align: center;
   padding: 15px 15vw;
   padding-top: 70px;
@@ -11,7 +11,7 @@
   background-image: url("../assets/about-background.jpg");
 }
 
-.container > h2 {
+.about > h2 {
   font-size: clamp(3rem, 10vw, 4rem);
   font-weight: 600;
 }
@@ -23,24 +23,24 @@
   padding-right: 1rem;
 }
 
-p,h4{
+.about p,h4{
   margin-inline: 15px;
 }
 
-h3{
+.about h3{
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   left: -15px;
   font-weight: 500;
 }
 
-h4{
+.about h4{
   font-size: clamp(1rem, 10vw, 1.5rem);
   font-weight: 400;
   margin-bottom: -10px;
 }
 
 @media screen and (max-width: 600px) {
-  .container{
+  .about{
     padding: 15px 8px;
   }
 }

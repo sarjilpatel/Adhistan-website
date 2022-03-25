@@ -5,7 +5,7 @@ import "./about.css";
 
 function About() {
   return (
-    <div className="container">
+    <div className="about">
       <Bounce bottom>
         <h2>About</h2>
       </Bounce>

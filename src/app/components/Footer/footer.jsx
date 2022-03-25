@@ -8,18 +8,27 @@ function Footer() {
     <div className="footer-container">
       <div className="footer-div">
         <div className="footer-contact-div">
-          <h1>Contact Info:</h1>
-          <p>Call: 02983673 </p>
-          <p>Email: adhishthan_2022@mbit.edu.in</p>
+          <h2>Contact Info:</h2>
+          <p>
+            Call: <a href="tel:02983673">02983673</a>{" "}
+          </p>
+          <p>
+            Email:{" "}
+            <a href="mailto:adhishthan_2022@mbit.edu.in">
+              adhishthan_2022@mbit.edu.in
+            </a>
+          </p>
         </div>
         <div className="footer-address-div">
-          <h1>Address:</h1>
-          <p>Madhuben & Bhanubhai Patel Institute of Technology (MBIT)</p>
-          <p>P.O.Box No. 8</p>
-          <p>Beyond Vithal Udhyog Nagar,</p>
-          <p>Dist. Anand,</p>
-          <p> St. Gujarat,</p>
-          <p> India.</p>
+          <h2>Address:</h2>
+          <a href="https://g.page/MBIT-CVM-University?share">
+            <p>Madhuben & Bhanubhai Patel Institute of Technology (MBIT)</p>
+            <p>P.O.Box No. 8</p>
+            <p>Beyond Vithal Udhyog Nagar,</p>
+            <p>Dist. Anand,</p>
+            <p> St. Gujarat,</p>
+            <p> India.</p>
+          </a>
         </div>
       </div>
       <div className="footer-icons">
