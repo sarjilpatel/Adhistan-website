@@ -8,4 +8,7 @@
 .App {
   padding: 0;
   margin: -10px;
+  background-image: url("../src/app/components/assets/bg.svg");
+  background-position: center;
+  background-size: cover;
 }
