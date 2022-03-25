@@ -6,7 +6,9 @@ import logo from "../assets/logo.png";
 import { NavLink as Link } from "react-router-dom";
 
 export const NavbarContainer = ({ children }) => (
-  <div className="navbar">{children}</div>
+  <div className="navbar" id="navbar">
+    {children}
+  </div>
 );
 
 export const Logo = () => (

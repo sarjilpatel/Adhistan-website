@@ -1,12 +1,13 @@
 .sidebar{
-    position: fixed;
+    position: absolute;
     z-index: 5;
     width: 200px;
     height: 250px;
     background: transparent;
     display: grid;
     align-items: flex-end;
-    top: 100;
+    top: 90px;
+    right: 10px;
     transition: .3s ease-in-out;
 }
 
