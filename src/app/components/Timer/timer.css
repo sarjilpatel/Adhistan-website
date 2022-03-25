@@ -8,26 +8,26 @@
 }
 
 .timer h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 600px) {
-  .timer h2{
-    font-size: 2rem;
+  .timer h2 {
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
 }
 
-.timer-item{
+.timer-item {
   width: 10px;
   height: 10px;
 }
 
 .counter {
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
 }
