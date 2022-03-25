@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   NavbarContainer,
   Logo,
@@ -19,8 +19,8 @@ function Navbar({ toggle, open }) {
     console.log(window.innerWidth);
   };
 
-  useContext(() => {
-    console.log("Event Raised.");
+  useEffect(() => {
+    toggleBtn();
   }, []);
 
   window.addEventListener("resize", toggleBtn);
