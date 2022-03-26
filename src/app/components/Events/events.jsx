@@ -1,3 +1,4 @@
+import { IconButton } from "@mui/material";
 import React from "react";
 import "./events.css";
 
@@ -18,14 +19,20 @@ export const EventSection = ({ title, events, image }) => (
           <table>
             {events.map((item) => (
               <tr>
-                <th>{item.title}</th>
-                <th>
-                  <img src={require("../assets/detail.png")} alt="detail" />
+                <th className="event-table-title">{item.title}</th>
+                <th className="event-table-btn">
+                  <IconButton size="small" className="event-btn">
+                    <img src={require("../assets/detail.png")} alt="detail" />
+                  </IconButton>
                 </th>
-                <th>
-                  <a href={item?.registerLink}>
+                <th className="event-table-btn">
+                  <IconButton
+                    href={item?.registerLink}
+                    size="small"
+                    className="event-btn"
+                  >
                     <img src={require("../assets/register.png")} alt="detail" />
-                  </a>
+                  </IconButton>
                 </th>
               </tr>
             ))}
