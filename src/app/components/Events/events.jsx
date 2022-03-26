@@ -9,7 +9,7 @@ export const EventsContainer = ({ children }) => (
   </div>
 );
 
-export const EventSection = ({ title, events, image }) => (
+export const EventSection = ({ title, events, image, onClick }) => (
   <div className="event-section">
     <div className="event-section-wrapper">
       <img src={image} alt={title} />
@@ -21,7 +21,11 @@ export const EventSection = ({ title, events, image }) => (
               <tr>
                 <th className="event-table-title">{item.title}</th>
                 <th className="event-table-btn">
-                  <IconButton size="small" className="event-btn">
+                  <IconButton
+                    size="small"
+                    onClick={onClick}
+                    className="event-btn"
+                  >
                     <img src={require("../assets/detail.png")} alt="detail" />
                   </IconButton>
                 </th>

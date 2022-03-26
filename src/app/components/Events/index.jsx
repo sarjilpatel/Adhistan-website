@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { EventsContainer, EventSection } from "./events";
 import "./events.css";
 import { Fade } from "react-reveal";
+import EventModal from "../EventModal";
 
 const data = [
   {
@@ -104,6 +105,10 @@ const data = [
 ];
 
 function Events() {
+  const [currData, setcurrData] = useState(null);
+  const [isOpen, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
+
   return (
     <Fade bottom>
       <EventsContainer>
@@ -113,8 +118,13 @@ function Events() {
             image={item.image}
             id={item.id}
             events={item.events}
+            onClick={() => {
+              setcurrData(data[item.id - 1].events);
+              setOpen(!isOpen);
+            }}
           />
         ))}
+        <EventModal data={currData} open={isOpen} close={handleClose} />
       </EventsContainer>
     </Fade>
   );
