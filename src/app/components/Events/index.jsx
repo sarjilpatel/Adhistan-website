@@ -120,8 +120,8 @@ function Events() {
             image={item.image}
             id={item.id}
             events={item.events}
-            onClick={() => {
-              setcurrData(data[item.id - 1]);
+            onClick={(eventData) => {
+              setcurrData(eventData);
               setOpen(!isOpen);
             }}
           />

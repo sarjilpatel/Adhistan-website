@@ -3,7 +3,7 @@ import React from "react";
 import "./events.css";
 
 export const EventsContainer = ({ children }) => (
-  <div className="events">
+  <div className="events" id="events">
     <h2 className="events-header">Events</h2>
     <div className="event-wrap">{children}</div>
   </div>
@@ -23,7 +23,7 @@ export const EventSection = ({ title, events, image, onClick }) => (
                 <th className="event-table-btn">
                   <IconButton
                     size="small"
-                    onClick={onClick}
+                    onClick={() => onClick(item)}
                     className="event-btn"
                   >
                     <img src={require("../assets/detail.png")} alt="detail" />

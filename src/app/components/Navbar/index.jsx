@@ -33,9 +33,9 @@ function Navbar({ toggle, open }) {
         {showBtn && <MenuIcon open={open} onClick={toggle} />}
         {!showBtn && (
           <MenuItemWrapper>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/events">Events</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="about">About</NavLink>
+            <NavLink to="events">Events</NavLink>
+            <NavLink to="contact">Contact</NavLink>
           </MenuItemWrapper>
         )}
       </Menu>

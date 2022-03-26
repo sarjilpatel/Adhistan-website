@@ -2,7 +2,9 @@ import { Bounce, Fade } from "react-reveal";
 import "./hero.css";
 
 export const HeroContainer = ({ children }) => (
-  <div className="hero">{children}</div>
+  <div className="hero" id="home">
+    {children}
+  </div>
 );
 
 export const HeroContent = () => (

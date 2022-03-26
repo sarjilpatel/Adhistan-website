@@ -8,6 +8,7 @@ import {
   ModalTitle,
   ModalBtn,
 } from "./Modal";
+import "./modal.css";
 
 function EventModal({ data, open, close }) {
   return (

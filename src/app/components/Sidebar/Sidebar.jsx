@@ -1,5 +1,6 @@
 import "./sidebar.css";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export const SidebarContainer = ({ children, isOpen }) => (
   <div className="sidebar" style={{ right: isOpen ? "0" : "-1000px" }}>
@@ -8,9 +9,9 @@ export const SidebarContainer = ({ children, isOpen }) => (
 );
 
 export const SidebarLink = ({ children, ...extra }) => (
-  <div {...extra} className="sidebar-link">
+  <Link {...extra} smooth={true} className="sidebar-link">
     {children}
-  </div>
+  </Link>
 );
 
 export const SidebarMenu = ({ children }) => (

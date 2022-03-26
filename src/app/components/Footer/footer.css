@@ -46,9 +46,32 @@ a:hover{
   margin: 0 1rem 2rem 2rem;
 
 }
-@media (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
   .footer-div {
     flex-direction: column;
     justify-content: center;
   }
+  .scroll-to-top{
+    right: 3px;
+  }
+}
+
+.scroll-to-top{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #808080;
+  display: flex;
+  background-color: #808080;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-to-top:hover{
+  color: #404040;
 }

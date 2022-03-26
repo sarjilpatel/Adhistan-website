@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
 import { FiInstagram, FiYoutube } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
+import { FaArrowUp } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Footer() {
+  const [show, setShow] = useState(false);
+  const toggleShow = () => {
+    if (window.scrollY > 400) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+  useEffect(toggleShow);
+  window.addEventListener("scroll", toggleShow);
+
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="contact">
       <div className="footer-div">
+        {show && (
+          <Link className="scroll-to-top" to="home" smooth={true}>
+            <FaArrowUp />
+          </Link>
+        )}
         <div className="footer-contact-div">
           <h2>Contact Info:</h2>
           <span>
