@@ -16,7 +16,7 @@ function EventModal({ data, open, close }) {
         <TitleImage img={data?.image} />
         <ModalContent>
           <ModalTitle>{data?.title}</ModalTitle>
-          <ModalDescription></ModalDescription>
+          <ModalDescription>{data?.description}</ModalDescription>
           <ModalBtn href={data?.registrationLink} />
         </ModalContent>
       </ModalContainer>

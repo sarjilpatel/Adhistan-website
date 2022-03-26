@@ -19,6 +19,8 @@ const data = [
       },
       {
         title: "Guessozonia",
+        image: require("../assets/events/workshop-event.png"),
+        description: "round 1 : guess image",
       },
       {
         title: "Hardwar",
@@ -119,7 +121,7 @@ function Events() {
             id={item.id}
             events={item.events}
             onClick={() => {
-              setcurrData(data[item.id - 1].events);
+              setcurrData(data[item.id - 1]);
               setOpen(!isOpen);
             }}
           />
