@@ -74,6 +74,10 @@
   transition: .2s ease-in-out;
 }
 
+.event-section:hover .events-items{
+  height: fit-content;
+}
+
 .events-wrapper{
   display: flex;
   height: 200px;
